@@ -1,0 +1,4 @@
+-This is a standalone application whose only job is to update a DB
+-SMTP server for sending the final email is already configured and running
+-The XML coming from the web service will be properly formatted (no multiple root nodes)
+-Running on a Windows system with task scheduler configured to run the jar everyday once at 12:01am
