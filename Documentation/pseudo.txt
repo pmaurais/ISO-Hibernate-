@@ -1,13 +1,13 @@
 Driver.main()
 	File data=GET(webserviceIP)
-	unMarshalData(data)
+	master=unMarshalData(data)
 
-	localData=getLocalData()
+	local=getLocalData()
 	mapify(localData)
 	
-	check(CustomerData)
-	check(ProductData)
-	check(RelationshipData)
+	check(masterCust,localCust)
+	check(masterProd,localProd)
+	check(masterRel,localRel)
 
 
 Driver.check(Map<Integer, Item> master, Map<Integer, Item> local)
