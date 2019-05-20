@@ -1,0 +1,39 @@
+Driver.main()
+	File data=GET(webserviceIP)
+	unMarshalData(data)
+
+	localData=getLocalData()
+	mapify(localData)
+	
+	check(CustomerData)
+	check(ProductData)
+	check(RelationshipData)
+
+
+Driver.check(Map<Integer, Item> master, Map<Integer, Item> local)
+	for (keys in master)
+		if (masterKey not in localKeys)
+			add record to DB
+		else if(local and master record do not match)
+			update record in db
+	for(keys in local)
+		if (localKey not in masterKeys)
+			delete record from DB
+
+//hibernate returns data as lists, cast to a map of Items for easy comparison
+Driver.mapify(Iterable<Item> items)
+	for(Item item:items)
+		map.put(itemID->item)
+	return map
+
+//Using jaxb
+Driver.unMarshalData(File file)
+	return jaxbUnmarshaller.unmarshal(file)
+
+//Using hibernate
+Driver.getLocalData()
+	products=queryAll(Products)
+	relationships=queryAll(Relationship)
+	customers=queryAll(Customer)
+
+	return {products,relationships,customers)
