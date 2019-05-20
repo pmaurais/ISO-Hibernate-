@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "Product" table = "product">
+
+        <id name = "id" type = "int" column = "id"/>
+
+        <property name = "name" column = "name" type = "string"/>
+        <property name = "effectiveDate" column = "effectiveDate" type = "string"/>
+        <property name = "expirationDate" column = "expirationDate" type = "string"/>
+        <property name = "category" column = "category" type = "string"/>
+        <property name = "invoicePrice" column = "invoicePrice" type = "double"/>
+        <property name = "Msrp" column = "Msrp" type = "double"/>
+        <property name = "vendorComissionPercent" column = "vendorComissionPercent" type = "double"/>
+
+
+    </class>
+</hibernate-mapping>

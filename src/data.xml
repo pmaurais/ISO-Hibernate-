@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <customers>
+        <customer>
+            <id>100</id>
+            <name>Customer 100</name>
+            <duns>100100100</duns>
+            <active>Y</active>
+        </customer>
+        <customer>
+            <id>200</id>
+            <name>Customer 200</name>
+            <duns>200200200</duns>
+            <active>Y</active>
+        </customer>
+        <customer>
+            <id>300</id>
+            <name>Customer 300</name>
+            <duns>300300300</duns>
+            <active>Y</active>
+        </customer>
+        <customer>
+            <id>400</id>
+            <name>Customer 400</name>
+            <duns>400400400</duns>
+            <active>Y</active>
+        </customer>
+    </customers>
+    <products>
+        <product>
+            <id>1001</id>
+            <name>Boiler Plates</name>
+            <effectiveDate>01/01/2001</effectiveDate>
+            <expirationDate>01/01/2020</expirationDate>
+            <category>Spare</category>
+            <invoicePrice>200</invoicePrice>
+            <Msrp>260</Msrp>
+            <vendorComissionPercent>3</vendorComissionPercent>
+        </product>
+        <product>
+            <id>2001</id>
+            <name>Generator Cables</name>
+            <effectiveDate>01/01/2012</effectiveDate>
+            <expirationDate>01/01/2016</expirationDate>
+            <category>Accessories</category>
+            <invoicePrice>85</invoicePrice>
+            <Msrp>98</Msrp>
+            <vendorComissionPercent>5</vendorComissionPercent>
+        </product>
+        <product>
+            <id>3001</id>
+            <name>Generator Cables</name>
+            <effectiveDate>01/01/2012</effectiveDate>
+            <expirationDate>01/01/2016</expirationDate>
+            <category>Accessories</category>
+            <invoicePrice>85</invoicePrice>
+            <Msrp>98</Msrp>
+            <vendorComissionPercent>5</vendorComissionPercent>
+        </product>
+        <product>
+            <id>4001</id>
+            <name>Generator Coolers</name>
+            <effectiveDate>01/01/2014</effectiveDate>
+            <expirationDate>12/31/2016</expirationDate>
+            <category>Core</category>
+            <invoicePrice>1645.50</invoicePrice>
+            <Msrp>1750.35</Msrp>
+            <vendorComissionPercent>2</vendorComissionPercent>
+        </product>
+        <product>
+            <id>5001</id>
+            <name>Generator Main Circuit Board</name>
+            <effectiveDate>01/01/2014</effectiveDate>
+            <expirationDate>12/31/2016</expirationDate>
+            <category>Core</category>
+            <invoicePrice>7425.50</invoicePrice>
+            <Msrp>9350.35</Msrp>
+            <vendorComissionPercent>4</vendorComissionPercent>
+        </product>
+    </products>
+    <relationships>
+        <relationship>
+            <customerId>100</customerId>
+            <productIds>
+                <productId>1001</productId>
+                <productId>4001</productId>
+            </productIds>
+        </relationship>
+        <relationship>
+            <customerId>200</customerId>
+            <productIds>
+                <productId>3001</productId>
+                <productId>5001</productId>
+            </productIds>
+        </relationship>
+    </relationships>
+</data>
