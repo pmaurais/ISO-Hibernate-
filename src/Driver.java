@@ -82,8 +82,6 @@ public class Driver {
                 session.delete(local.get(localKey));
             }
         }
-
-
     }
 
     private static List[] getLocal() {
